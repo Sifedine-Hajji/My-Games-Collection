@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--=================================== css =============================== -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- =========================== head Logo ============================== -->
+    <link rel="shortcut icon" href="/Pics/site-logo.png">
+    <!-- =========================== Font awesome ============================== -->
+    <script src="https://kit.fontawesome.com/08f226ae60.js" crossorigin="anonymous"></script>
+    <!-- =========================== Font Family ============================== -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- =========================== Bootsrapt links =========================== -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+    </script>
+
+    <!-- ============================ Corp du site ============================= -->
+
+    <!-- ============================ START NAVBAR ============================= -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black; border: 1px solid #7A7A7A;" >
+        <img src="/Pics/site-logo.png" class="mr-5" style="width: 2%;" alt="">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><i class="fas fa-home" style="color: #F29602"></i> Home<span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><i class="fas fa-scroll" style="color: #F29602"></i> Library<span
+                            class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" id="filter_input" placeholder="Search for games" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" style="color: #F29602" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <!-- ============================= END NAVBAR ============================== -->
+
+    <!-- ============================= START JUMBOTRON ========================= -->
+    <input type="checkbox" name="">
+    <div class="jumbotron jumbotron-fluid" style="background-image: linear-gradient(-90deg, black, #0A111F,black)">
+        <div class="container d-flex justify-content-center ">
+            <img src="Pics/Controller.png" class="rounded float-left d-none d-md-block"
+                style="width: 20%; height: 20%; filter: invert(100%);" alt="profile picture">
+            <div>
+                <h1 class="display-4 text-center" style="color: #F29602;"><strong>Sifedine's Collection</strong></h1>
+                <p class="lead text-center" style="color: silver;">THIS IS A COLLECTION OF <strong>GAMES</strong> THAT I
+                    LIKE</p>
+            </div>
+            <img src="Pics/Controller.png" class="rounded float-right d-none d-md-block "
+                style="width: 20%; height: 20%; filter: invert(100%);" alt="profile picture">
+        </div>
+    </div>
+    <!-- ============================= END JUMBOTRON =========================== -->
+    
+
+    <!-- =========================== START CARDS =============================== -->
+    <div class="container-fluid col-lg-9 row mx-auto">
+        <!-- <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-4">
+            <div class="card text-white bg-dark" style="background-image: linear-gradient(to bottom, #014665,black)">
+                <img src="Pics/ASC-IV.jpeg" class="card-img-top" alt="ASC IV ">
+                <div class="card-body">
+                    <span class="badge badge-pill badge-danger">Action</span>
+                    <span class="badge badge-pill badge-success">Aventure</span>
+                    <h5 class="card-title">ASSASSIN'S CREED IV</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">UBISOFT <span class="badge badge-pill badge-danger"><i
+                                class="fas fa-desktop"></i></span> <span class="badge badge-pill badge-primary"><i
+                                class="fab fa-playstation"></i></span> <span class="badge badge-pill badge-success"><i
+                                class="fab fa-xbox"></i></span></h6>
+                    <p class="card-text overflow-auto" style="font-size: small;height:6em">1715, les Pirates règnent sur
+                        les Caraïbes et
+                        viennent de fonder une République
+                        anarchique. Parmi ces hors-la-loi se trouve un jeune capitaine redoutable du nom d’Edward
+                        Kenway. Si ses exploits lui font gagner le respect des pirates légendaires comme Barbe
+                        Noire,
+                        ils le plongent aussi au cœur de la guerre millénaire entre Assassins et Templiers.</p>
+                </div>
+                <div>
+                    <a href="https://www.youtube.com/watch?v=OwVe4ZNeQZk"><i class="fab fa-2x fa-youtube"
+                            style="color: red;"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-4">
+            <div class="card text-white bg-dark" style="background-image: linear-gradient(to bottom, #014665,black)">
+                <img src="Pics/ASC-Origins.jpg" class="card-img-top" alt="ASC Origins">
+                <div class="card-body">
+                    <span class="badge badge-pill badge-danger">Action</span>
+                    <span class="badge badge-pill badge-success">Aventure</span>
+                    <h5 class="card-title" style="font-size: 118%;">ASSASSIN'S CREED ORIGINS</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">UBISOFT <span class="badge badge-pill badge-danger"><i
+                                class="fas fa-desktop"></i></span> <span class="badge badge-pill badge-primary"><i
+                                class="fab fa-playstation"></i></span> <span class="badge badge-pill badge-success"><i
+                                class="fab fa-xbox"></i></span></h6>
+                    <p class="card-text overflow-auto" style="font-size: small;height:6em">L'Egypte Antique. Autrefois
+                        un empire prospère
+                        et influant, maintenant ce n'est
+                        plus qu'une civilisation tombant en ruine. Incarnez Bayek fils de Siwa et sa compagne et
+                        plongez
+                        dans cette mystérieuse période de l'histoire pour découvrez l'excitant et dangereux récit
+                        derrière la création de la 1ère Confrérie des Assassins</p>
+                </div>
+                <div class="col-md-8 mr-5">
+                    <a href="https://www.youtube.com/watch?v=xMG0JUHpVk8"><i class="fab fa-2x fa-youtube"
+                            style="color: red;"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-4">
+            <div class="card text-white bg-dark" style="background-image: linear-gradient(to bottom, #014665,black)">
+                <img src="Pics/ASC-Valhalla.jpg" class="card-img-top" alt="ASC Valhalla">
+                <div class="card-body">
+                    <span class="badge badge-pill badge-danger">Action</span>
+                    <span class="badge badge-pill badge-success">Aventure</span>
+                    <h5 class="card-title" style="font-size: 111%;">ASSASSIN'S CREED VALHALLA</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">UBISOFT <span class="badge badge-pill badge-danger"><i
+                                class="fas fa-desktop"></i></span> <span class="badge badge-pill badge-primary"><i
+                                class="fab fa-playstation"></i></span> <span class="badge badge-pill badge-success"><i
+                                class="fab fa-xbox"></i></span></h6>
+                    <p class="card-text overflow-auto" style="font-size: small;height:6em">Dans Assassin's Creed
+                        Valhalla, incarnez Eivor,
+                        Viking légendaire en quête de gloire. Explorez un monde ouvert splendide et dynamique, dans
+                        la violence de l’Angleterre
+                        médiévale. Partez en raids pour attaquer vos ennemis, améliorez votre campement et
+                        développez votre influence politique afin de mériter votre place parmi les dieux, au
+                        Valhalla.</p>
+                </div>
+                <div class="col-md-8 mr-5">
+                    <a href="https://www.youtube.com/watch?v=L0Fr3cS3MtY"><i class="fab fa-2x fa-youtube"
+                            style="color: red;"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-4">
+            <div class="card text-white bg-dark" style="background-image: linear-gradient(to bottom, #014665,black)">
+                <img src="Pics/God-of-war.jpg" class="card-img-top" alt="God-of-war">
+                <div class="card-body">
+                    <span class="badge badge-pill badge-danger">Action</span>
+                    <span class="badge badge-pill badge-success">Aventure</span>
+                    <h5 class="card-title">GOD OF WAR IV</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">SANTA MONICA STUDIOS <span
+                            class="badge badge-pill badge-primary"><i class="fab fa-playstation"></i></span> </h6>
+                    <p class="card-text overflow-auto" style="font-size: small;height:6em">Dans ce nouvel opus de God Of
+                        War, le héros
+                        évoluera dans un monde aux inspirations nordiques, très forestier et montagneux. Un enfant
+                        accompagnera le héros principal, pouvant apprendre des actions du joueur, et même gagner de
+                        l'expérience.
+                    </p>
+                </div>
+                <div class="col-md-8 mr-5">
+                    <a href="https://www.youtube.com/watch?v=gOE2BVRCUkM"><i class="fab fa-2x fa-youtube"
+                            style="color: red;"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-4">
+            <div class="card text-white bg-dark" style="background-image: linear-gradient(to bottom, #014665,black)">
+                <img src="Pics/RDR-2.jpg" class="card-img-top" alt="RDR 2">
+                <div class="card-body">
+                    <span class="badge badge-pill badge-danger">Action</span>
+                    <span class="badge badge-pill badge-success">Aventure</span>
+                    <h5 class="card-title">RED DEAD REDEMPTION II</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">ROCKSTAR GAMES <span
+                            class="badge badge-pill badge-danger"><i class="fas fa-desktop"></i></span> <span
+                            class="badge badge-pill badge-primary"><i class="fab fa-playstation"></i></span> <span
+                            class="badge badge-pill badge-success"><i class="fab fa-xbox"></i></span></h6>
+                    <p class="card-text overflow-auto" style="font-size: small;height:6em">Red dead redemtpion 2 permet
+                        de plonger dans
+                        une ambiance western synonyme de vastes espaces sauvages et de villes malfamées. L'histoire
+                        se déroule en 1899 avant le
+                        premier opus, au moment ou Arthur Morgan doit fuir avec sa bande après un braquage raté.
+                    </p>
+                </div>
+            
+                <div class="col-md-8 mr-5">
+                    <a href="https://www.youtube.com/watch?v=gmA6MrX81z4"><i class="fab fa-2x fa-youtube"
+                            style="color: red;"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-4">
+            <div class="card text-white bg-dark" style="background-image: linear-gradient(to bottom, #014665,black)">
+                <img src="Pics/GTAV.jpg" class="card-img-top" alt="GTA V">
+                <div class="card-body">
+                    <span class="badge badge-pill badge-danger">Action</span>
+                    <span class="badge badge-pill badge-success">Aventure</span>
+                    <h5 class="card-title">GRAND THEFT AUTO V</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">ROCKSTAR GAMES <span
+                            class="badge badge-pill badge-danger"><i class="fas fa-desktop"></i></span> <span
+                            class="badge badge-pill badge-primary"><i class="fab fa-playstation"></i></span> <span
+                            class="badge badge-pill badge-success"><i class="fab fa-xbox"></i></span></h6>
+                    <p class="card-text overflow-auto" style="font-size: small;height:6em">GTA V vous place dans la peau
+                        de
+                        trois
+                        personnages inédits. Ces derniers ont élu domicile à Los Santos, ville de la région de San
+                        Andreas. Braquages et missions font
+                        partie du quotidien du joueur qui pourra également cohabiter avec 15 autres utilisateurs
+                        dans cet
+                        univers persistant
+                    </p>
+                </div>
+                <div class="col-md-8 mr-5">
+                    <a href="https://www.youtube.com/watch?v=hvoD7ehZPcM"><i class="fab fa-2x fa-youtube"
+                            style="color: red;"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-4">
+            <div class="card text-white bg-dark" style="background-image: linear-gradient(to bottom, #014665,black)">
+                <img src="Pics/Valorant.jpg" class="card-img-top" alt="VALORANT">
+                <div class="card-body">
+                    <span class="badge badge-pill badge-warning" style="color: white;">FPS</span>
+                    <h5 class="card-title">VALORANT</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">RIOT <span class="badge badge-pill badge-danger"><i
+                                class="fas fa-desktop"></i></span></h6>
+                    <p class="card-text overflow-auto" style="font-size: small;height:6em">Il s'agit d'un match de tir
+                        tactique 5v5 pour
+                        planter ou désamorcer le Spike dans une série d'une vie par tour, allant jusqu'à 13 manches.
+                        En plus des fusils et balles,
+                        vous choisirez un agent doté de capacités d'adaptation, de rapidité et de puissance de feu
+                        pour faire briller votre style de jeu.
+                    </p>
+                </div>
+                <div class="col-md-8 mr-5">
+                    <a href="https://www.youtube.com/watch?v=e_E9W2vsRbQ"><i class="fab fa-2x fa-youtube"
+                            style="color: red;"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-4">
+            <div class="card text-white bg-dark" style="background-image: linear-gradient(to bottom, #014665,black)">
+                <img src="Pics/FIFA21.jpg" class="card-img-top" alt="FIFA 21">
+                <div class="card-body">
+                    <span class="badge badge-pill badge-info">Sports</span>
+                    <h5 class="card-title">FIFA 21</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">ELECTONIC ARTS <span
+                            class="badge badge-pill badge-danger"><i class="fas fa-desktop"></i></span> <span
+                            class="badge badge-pill badge-primary"><i class="fab fa-playstation"></i></span> <span
+                            class="badge badge-pill badge-success"><i class="fab fa-xbox"></i></span></h6>
+                    <p class="card-text overflow-auto" style="font-size: small;height:6em">FIFA 21 est une simulation de
+                        football. Comme
+                        chaque année, le jeu promet des améliorations techniques pour toujours plus de réalisme
+                        ainsi que des animations et des
+                        comportements toujours plus poussés. Les modes carrière et Ultimate Team disposent également
+                        de nouveaux ajouts et un mode street disponible.
+                    </p>
+                </div>
+                <div class="col-md-8 mr-5">
+                    <a href="https://www.youtube.com/watch?v=efWDFk2i_TQ"><i class="fab fa-2x fa-youtube"
+                            style="color: red;"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-4">
+            <div class="card text-white bg-dark" style="background-image: linear-gradient(to bottom, #014665,black)">
+                <img src="Pics/nba2k21.jpg" class="card-img-top" alt="NBA 2K21">
+                <div class="card-body">
+                    <span class="badge badge-pill badge-info">Sports</span>
+                    <h5 class="card-title">NBA 2K21</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">2K SPORTS <span class="badge badge-pill badge-danger"><i
+                                class="fas fa-desktop"></i></span> <span class="badge badge-pill badge-primary"><i
+                                class="fab fa-playstation"></i></span> <span class="badge badge-pill badge-success"><i
+                                class="fab fa-xbox"></i></span></h6>
+                    <p class="card-text overflow-auto" style="font-size: small;height:6em">NBA 2K21 est une simulation
+                        de
+                        basketball.
+                        Comme chaque année le jeu promet des améliorations techniques pour toujours plus de réalisme
+                        ainsi que des animations et des comportements toujours plus poussés. les modes "Ma carrière"
+                        et "Mon équipe" disposent de nouveaux ajouts.
+                    </p>
+                </div>
+                <div class="col-md-8 mr-5">
+                    <a href="https://www.youtube.com/watch?v=LUdPHjOaKrk&t=3s"><i class="fab fa-2x fa-youtube"
+                            style="color: red;"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-4">
+            <div class="card text-white bg-dark" style="background-image: linear-gradient(to bottom, #014665,black)">
+                <img src="Pics/fortnite.jpeg" class="card-img-top" alt="FORTNITE">
+                <div class="card-body">
+                    <span class="badge badge-pill badge-secondary">Tps</span>
+                    <h5 class="card-title">FORTNITE</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">EPIC GAMES <span class="badge badge-pill badge-danger"><i
+                                class="fas fa-desktop"></i></span> <span class="badge badge-pill badge-primary"><i
+                                class="fab fa-playstation"></i></span> <span class="badge badge-pill badge-success"><i
+                                class="fab fa-xbox"></i></span></h6>
+                    <p class="card-text overflow-auto" style="font-size: small;height:6em">Fortnite est un Tower-Defense
+                        orienté sandbox.
+                        Les joueurs se réunissent en équipe et doivent crafter armes et pièges pour ensuite
+                        construire une forteresse et la défendre contre les nombreux monstres qui viendront
+                        l'assaillir.
+                    </p>
+                </div>
+                <div class="col-md-8 mr-5">
+                    <a href="https://www.youtube.com/watch?v=2gUtfBmw86Y&t=18s"><i class="fab fa-2x fa-youtube"
+                            style="color: red;"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-4">
+            <div class="card text-white bg-dark" style="background-image: linear-gradient(to bottom, #014665,black)">
+                <img src="Pics/Uncharted4.jpg" class="card-img-top" alt="UNCHARTED 4">
+                <div class="card-body">
+                    <span class="badge badge-pill badge-danger">Action</span>
+                    <span class="badge badge-pill badge-success">Aventure</span>
+                    <span class="badge badge-pill badge-secondary">Tps</span>
+                    <h5 class="card-title">UNCHARTED 4</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">NAUGHTY DOGS <span
+                            class="badge badge-pill badge-primary"><i class="fab fa-playstation"></i></span></h6>
+                    <p class="card-text overflow-auto" style="font-size: small;height:6em">Quatrième opus de la série de
+                        jeu
+                        d'action/aventure à succès de Naughty Dog, Uncharted 4 A Thief's End vous permet d'incarner
+                        Nathan Drake pour la première fois sur PS4. Le célèbre explorateur devra révéler le complot
+                        qui se cache derrière un légendaire trésor de pirates.
+                    </p>
+                </div>
+                <div class="col-md-8 mr-5">
+                    <a href="https://www.youtube.com/watch?v=y1Rx-Bbht5E&t=35s"><i class="fab fa-2x fa-youtube"
+                            style="color: red;"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-4">
+            <div class="card text-white bg-dark" style="background-image: linear-gradient(to bottom, #014665,black)">
+                <img src="Pics/The-last-of-us-2.jpg" class="card-img-top" alt="THE LAST OF US 2">
+                <div class="card-body">
+                    <span class="badge badge-pill badge-danger">Action</span>
+                    <span class="badge badge-pill badge-success">Aventure</span>
+                    <span class="badge badge-pill badge-secondary">Tps</span>
+                    <h5 class="card-title">THE LAST OF US II</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">NAUGHTY DOGS <span
+                            class="badge badge-pill badge-primary"><i class="fab fa-playstation"></i></span></h6>
+                    <p class="card-text overflow-auto" style="font-size: small;height:6em">nous retrouvons à nouveau
+                        Joel et
+                        Ellie plus
+                        déterminés que jamais à éradiquer les infectés jusqu'au dernier. Toujours nouveau dans un
+                        monde post apocalyptique, le duo toujours aussi soudé devra prendre les décisions qui
+                        s'imposent afin de survivre un seul jour de plus à cette pandémie.
+                    </p>
+                </div>
+                <div class="col-md-8 mr-5">
+                    <a href="https://www.youtube.com/watch?v=vhII1qlcZ4E&t=62s"><i class="fab fa-2x fa-youtube"
+                            style="color: red;"></i></a>
+                </div>
+            </div>
+        </div> -->
+
+    </div>
+    <!-- ============================= END CARDS =============================== -->
+    <div id="results"></div>
+    <script src="./collection.js"></script>
+
+</body>
+
+</html>

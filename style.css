@@ -1,0 +1,38 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: url(Pics/Background\ 2.jpg) no-repeat fixed;
+
+}
+.jumbotron {
+    font-family: 'Goldman', cursive;
+}
+
+.nav-item:hover {
+    background-color: #0A111F;
+}
+input[type="checkbox"] {
+    position: fixed;
+    z-index: 1;
+    right: 10px;
+    cursor: pointer;  
+    margin: 30px;
+    -webkit-appearance: none;
+}
+input[type="checkbox"]:before {
+    content: 'Daltonien mode';
+    position: relative;
+    color: #000;
+    background-color: #fff;
+    padding: 10px 20px;
+}
+
+input[type="checkbox"]:checked ~ * {
+    filter: invert(1);
+}
+
+.card-text::-webkit-scrollbar {
+    scroll-behavior: smooth;
+}
